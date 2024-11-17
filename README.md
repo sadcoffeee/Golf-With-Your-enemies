@@ -1,7 +1,7 @@
 # Golf With Your Enemies 
 This repository hosts the full project folder for the Unity game Golf With Your Enemies, my exam project for the "\[blank] but worse" exercise. Following is a paste of the majority of my brief project report to give a general overview of how the game is built. 
 
-Download the built version of the game from the [itch page!](https://sadcoffeee.itch.io/golf-with-your-enemies)
+Download the built version of the game from the [itch page](https://sadcoffeee.itch.io/golf-with-your-enemies) or view the [demo video](https://youtu.be/e0rkbefSzts)
 
 ## Overview of the Game:
 The game is very loosely inspired by Golf With Your Friends, featuring 4 small mini-golf levels connected by an open area for the player to test mechanics. The player controls a golf-ball, with the primary ability to shoot the golf ball in a direction with a variable amount of force, controlled by how long the player holds the shooting button. Halfway through the game, the player unlocks a secondary fire, which is used to access the final levels by destroying enemies. The game features a simple tip/tutorial system to assist the player, as well as a UI overlay to keep track of player scores. 
@@ -72,6 +72,7 @@ The player consists of a sphere collider & mesh with a rigidbody. All movement i
 
 ## Future work
 *(these are just my own ideas for improvements I'm considering making if I come back to this project)*
+- Impact particle effect and fall animation for when catapult shot hits walls
 - Splitting levels into their own scenes, using noise to generate killplane terrain for visual variety
 - Stationary sniper enemy to perform area denial (paired with a dash-like speed boost ability?)
 - Different ground materials (slippery, bouncy, sticky)
