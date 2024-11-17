@@ -20,7 +20,7 @@ Game features:
 
 ## How were the Different Parts of the Course Utilized:
 The player consists of a sphere collider & mesh with a rigidbody. All movement is done by applying force vectors to the player rigidbody using standard Unity physics. Camera position is controlled by calculating spherical coordinates in relation to the player position and applying these directly to the camera transform. The player uses collisions with invisible trigger box-colliders to trigger functions that start and stop levels, either in the case of leaving or in the case of entering the goal. Level flags are controlled by script to appear or disappear depending on distance to player. The enemy model was built using ProBuilder to assemble primitives, and animated to move back and forth at variable width and speed. The GUI is controlled by scripts to show tooltips at specific moments, as well as dynamically update with previously shown tips & player high scores. The scene is lit with a global directional light, and all ground uses a custom physics material for improved golf feel. 
-Project Parts:
+## Project Parts:
 ### Scripts:
 -	**Golfer** – main player script. Gets mouse-input to control camera, activate aiming guide objects (arrow marker + catapult + their line renderers), perform shooting with coroutines, as well as collision checks for things like killplane and level activation and deactivation triggers. 
 -	**GolfLevel** – Keeps track of whether the level is currently played and how many shots the player has taken through functions called by the Golfer script. Has public variables for par and max amount of shots 
@@ -67,14 +67,15 @@ Project Parts:
 
 
 ## Used Resources
--	Skybox taken from https://assetstore.unity.com/packages/2d/textures-materials/sky/customizable-skybox-174576
-- Level models taken from https://www.kenney.nl/assets/minigolf-kit
+-	[**Skybox**](https://assetstore.unity.com/packages/2d/textures-materials/sky/customizable-skybox-174576)
+- [**Golf models**](https://www.kenney.nl/assets/minigolf-kit)
 
 ## Future work
 *(these are just my own ideas for improvements I'm considering making if I come back to this project)*
 - Splitting levels into their own scenes, using noise to generate killplane terrain for visual variety
 - Stationary sniper enemy to perform area denial (paired with a dash-like speed boost ability?)
 - Different ground materials (slippery, bouncy, sticky)
+- Remake golf models as probuilder assets for improved modularity 
 
 
 
